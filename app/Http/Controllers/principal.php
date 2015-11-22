@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class Principal extends Controller {
+
+    public function principal() {
+        return view('index', [
+            'pagina' => 'principal', 
+            'img_topo' => 'home-bg.jpg', 
+            'tit_pag'=>'Blog do João Lucas',
+            'subTit_pag'=>'Blog de Informática: Tecnologia da Informação e Internet']);
+    }
+
+}
